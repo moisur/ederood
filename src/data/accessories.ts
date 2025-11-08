@@ -18,8 +18,9 @@ export const accessories: Accessory[] = [
     name: "Housse de Protection pour Handpan",
     price: 99.9,
     priceDisplay: "99,90€",
-    imageUrl: "/accessoires/Gemini_Generated_Image_i8qle9i8qle9i8ql_1_a14281b1-bbe3-44e3-89e1-3675e07e096c85a3.png",
-    hoverImageUrl: "/accessoires/Gemini_Generated_Image_dbxmgydbxmgydbxm-removebg-previewd02c.png",
+    imageUrl: "/accessoires/Gemini_Generated_Image_smnxresmnxresmnx955a.png",
+    hoverImageUrl:
+      "/accessoires/Gemini_Generated_Image_smnxresmnxresmnx955a.png",
     description:
       "Protégez votre instrument avec cette housse robuste et rembourrée, conçue pour un transport sécurisé.",
   },
@@ -73,8 +74,9 @@ export const accessories: Accessory[] = [
     name: "Paire de Mailloches",
     price: 12.0,
     priceDisplay: "12€",
-    imageUrl: "/accessoires/Gemini_Generated_Image_fvs0e2fvs0e2fvs0986f.png",
-    hoverImageUrl: "/accessoires/Gemini_Generated_Image_gv1c9kgv1c9kgv1c9968.png",
+    imageUrl: "/accessoires/Gemini_Generated_Image_a7x9cfa7x9cfa7x9674f.png",
+    hoverImageUrl:
+      "/accessoires/Gemini_Generated_Image_a7x9cfa7x9cfa7x9674f.png",
     description:
       "Des mailloches parfaitement équilibrées pour révéler les sonorités riches et subtiles de votre instrument.",
   },

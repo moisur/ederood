@@ -4,6 +4,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion, AnimatePresence, Easing, Variants } from "framer-motion";
 import { ImageModal } from "./ImageModal"; // Assurez-vous que le chemin d'import est correct
 import { VideoCard } from "./VideoCard";
@@ -67,6 +68,8 @@ const imageVariant: Variants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" as Easing } },
 };
 
+const MotionLink = motion(Link);
+
 const Gallery = () => {
   // État pour suivre quelle image est actuellement sélectionnée pour la modale
   const [selectedImage, setSelectedImage] = useState<
@@ -124,7 +127,7 @@ const Gallery = () => {
           </motion.div>
 
           <div className="text-center mt-20">
-            <motion.a
+            <MotionLink
               href="/videos"
               className="inline-block text-black font-bold py-4 px-8 rounded-full text-lg shadow-lg"
               style={{ backgroundColor: "#EEC980" }}
@@ -135,7 +138,7 @@ const Gallery = () => {
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
               Explorer nos créations en vidéo
-            </motion.a>
+            </MotionLink>
           </div>
 
           {/* Première vidéo en aperçu */}
@@ -156,7 +159,6 @@ const Gallery = () => {
           </div>
         </div>
       </section>
-
       {/* La Modale, contrôlée par AnimatePresence pour les animations d'entrée/sortie */}
       <AnimatePresence>
         {selectedImage && (

@@ -201,7 +201,7 @@ const CartSidebar = () => {
                   {getCartTotal()}€
                 </span>
               </div>
-              <Link href="/contact" passHref>
+              <Link href="/contact">
                 <motion.button
                   className="w-full text-black font-bold py-4 px-6 rounded-full text-lg shadow-lg"
                   style={{

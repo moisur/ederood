@@ -39,7 +39,7 @@ export const ProductCard = ({ product, index }: ProductCardProps) => {
       initial="hidden"
       animate={cardAnimation}
     >
-      <Link href={`/products/${product.slug}`} passHref>
+      <Link href={`/products/${product.slug}`}>
         <div className="group bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden h-full flex flex-col transform transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
           {/* Section Image & Promo */}
           <div className="relative">

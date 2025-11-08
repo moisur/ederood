@@ -29,7 +29,7 @@ const Header = () => {
   // Classes de base de l'en-tête
   const headerClasses = `fixed top-0 left-0 right-0 z-50 transition-all duration-300 text-white ${
     scrolled || !isHomePage
-      ? "bg-black bg-opacity-90 shadow-md backdrop-blur-sm"
+      ? "bg-neutral-900 shadow-md backdrop-blur-sm"
       : "bg-transparent"
   }`;
 
@@ -124,7 +124,7 @@ const Header = () => {
       </div>
 
       {menuOpen && (
-        <nav className="md:hidden bg-black bg-opacity-90 pb-4">
+        <nav className="md:hidden bg-neutral-900 pb-4">
           <Link
             href="/models"
             className="block text-center py-3 hover:bg-white/10 transition-colors"

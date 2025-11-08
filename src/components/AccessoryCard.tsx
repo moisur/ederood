@@ -62,7 +62,7 @@ export const AccessoryCard = ({ accessory }: AccessoryCardProps) => {
                 }}
                 transition={{ type: "spring", stiffness: 400, damping: 15 }}
               >
-                Voir
+                Plus de détails
               </motion.div>
             </Link>
           </div>

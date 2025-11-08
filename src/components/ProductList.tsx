@@ -42,7 +42,7 @@ const ProductList = () => {
         >
           {products.map((product, index) => (
             // La prop 'index' est maintenant passée à ProductCard pour l'animation en cascade
-            <ProductCard key={product.id} product={product} index={index} />
+            (<ProductCard key={product.id} product={product} index={index} />)
           ))}
         </motion.div>
       </div>

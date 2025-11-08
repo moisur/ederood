@@ -10,6 +10,8 @@ import ManufacturingProcess from "@/components/ManufacturingProcess";
 import MaterialQuality from "@/components/MaterialQuality";
 import MoreInfo from "@/components/MoreInfo";
 import ProductList from "@/components/ProductList";
+import AccordionGallery from "@/components/AccordionGallery";
+
 
 export default function HomePage() {
   return (
@@ -69,6 +71,7 @@ export default function HomePage() {
           </section>
 
           <ProductList />
+          <AccordionGallery />
           <Manufacturing />
           <HeroIntroduction />
           <ManufacturingProcess />

@@ -68,7 +68,9 @@ export const ImageModal = ({ image, onClose }: ImageModalProps) => {
           <h2 className="text-3xl font-bold font-serif text-gray-900">{image.caption}</h2>
           <div className="w-20 h-1 my-4" style={{ backgroundColor: '#EEC980' }} />
           <p className="text-gray-600 text-lg leading-relaxed flex-grow">{image.story}</p>
-          <Link href="/contact" passHref legacyBehavior>
+          <Link href="/contact">
+            {/* @next-codemod-error This Link previously used the now removed `legacyBehavior` prop, and has a child that might not be an anchor. The codemod bailed out of lifting the child props to the Link. Check that the child component does not render an anchor, and potentially move the props manually to Link. */
+            }
             <motion.button
               className="mt-8 inline-block w-full text-center text-black font-bold py-3 px-6 rounded-full text-lg shadow-lg"
               style={{ backgroundColor: '#EEC980' }}

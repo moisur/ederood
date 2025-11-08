@@ -43,7 +43,6 @@ export const ProductGallery = ({
           </div>
         ))}
       </div>
-
       {/* Colonne de l'Image Principale */}
       <div className="relative flex-grow rounded-2xl overflow-hidden shadow-xl">
         <AnimatePresence mode="wait">
