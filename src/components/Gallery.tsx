@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence, Easing, Variants } from "framer-motion";
 import { ImageModal } from "./ImageModal"; // Assurez-vous que le chemin d'import est correct
+import { VideoCard } from "./VideoCard";
 
 // La structure de données, complète avec les histoires d'artisan
 const imageItems = [
@@ -135,6 +136,23 @@ const Gallery = () => {
             >
               Explorer nos créations en vidéo
             </motion.a>
+          </div>
+
+          {/* Première vidéo en aperçu */}
+          <div className="mt-16 max-w-4xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <VideoCard videoId="QgMn63LHImI" title="HANDPAN EDEROD / FRANCE 3" />
+            </motion.div>
+          </div>
+          <div className="text-center mt-8">
+            <p className="text-lg text-gray-700">
+              Nous travaillons avec tant de passion et de dévouement que même France 3 a réalisé un reportage sur notre atelier et nos créations. Découvrez-le !
+            </p>
           </div>
         </div>
       </section>

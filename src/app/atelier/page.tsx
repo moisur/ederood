@@ -6,9 +6,11 @@ import React from "react";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Gallery from "@/components/Gallery"; // Import de la galerie
+import Gallery from "@/components/Gallery";
+import ProductList from "@/components/ProductList";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import ArtisanCallout from "@/components/ArtisanCallout";
 
 // On structure les étapes du processus pour plus de clarté
 const processSteps = [
@@ -174,6 +176,8 @@ const AtelierPage = () => {
         </section>
         {/* --- ACTE IV : LA GALERIE --- */}
         <Gallery />
+        <ProductList />
+        <ArtisanCallout />
       </main>
       <Footer />
     </div>

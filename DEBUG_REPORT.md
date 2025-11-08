@@ -36,7 +36,6 @@ Type '{ slug: string; }' is missing the following properties from type 'Promise<
 
 ## Conclusion Actuelle et Solution de Contournement :
 
-Le problème de typage `PageProps` au moment du build avec Next.js 16.0.1 (et React 19.2.0) semble être un problème profond lié à l'inférence de type interne de Next.js. Malgré plusieurs tentatives d'override et de nettoyage de cache, l'erreur persiste lors de la compilation.
 
 La seule solution de contournement fonctionnelle pour le moment est de revenir à l'utilisation de `any` pour le type des `params` dans le composant `ProductPage` de [`handpanederod/src/app/products/[slug]/page.tsx`](handpanederod/src/app/products/[slug]/page.tsx). Cela permet au build de passer, bien que cela réduise la sécurité des types pour cette partie du code.
 

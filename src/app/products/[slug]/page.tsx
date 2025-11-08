@@ -9,6 +9,7 @@ import { ProductGallery } from "@/components/ProductGallery";
 import { ProductPurchasePanel } from "@/components/ProductPurchasePanel";
 import { ProductCard } from "@/components/ProductCard"; // On importe la carte pour les produits similaires
 import { motion } from "framer-motion";
+import ArtisanCallout from "@/components/ArtisanCallout";
 // import type { PageProps } from "next";
 
 // --- Fonctions de récupération des données (maintenant complétées) ---
@@ -115,6 +116,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
             </div>
           </section>
         )}
+        <ArtisanCallout />
       </main>
       <Footer />
     </div>

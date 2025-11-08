@@ -1,3 +1,4 @@
+import ArtisanCallout from "@/components/ArtisanCallout";
 import Footer from "@/components/Footer";
 import Gallery from "@/components/Gallery";
 import Header from "@/components/Header";
@@ -49,7 +50,7 @@ export default function HomePage() {
                 </p>
                 <p>
                   The handpan Endro® is particular in that it brings a very
-                  <em>intuitive</em> and fun approach to playing because of its
+                  <em> intuitive</em> and fun approach to playing because of its
                   <strong>ergonomics</strong> and because it is tuned to a pre-determined mode.
                 </p>
                 <p>
@@ -80,6 +81,7 @@ export default function HomePage() {
 
           <ProductList />
           <Manufacturing />
+          <ArtisanCallout />
           <HighQuality />
           <Gallery />
           <MoreInfo />

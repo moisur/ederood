@@ -4,7 +4,9 @@ import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { motion, Easing, Variants } from 'framer-motion';
-import { VideoCard } from '@/components/VideoCard'; // On importe notre nouveau composant
+import { VideoCard } from '@/components/VideoCard';
+import ProductList from '@/components/ProductList';
+import ArtisanCallout from '@/components/ArtisanCallout';
 
 const videos = [
   { id: "fS8mVBh51Xo", title: "HANDPAN EDEROD / CELTIQUE" },
@@ -63,16 +65,19 @@ const VideosPage = () => {
       <main className="container mx-auto py-24 sm:py-32 px-6 lg:px-8">
         {/* Titre de page, en accord avec notre DA */}
         <div className="max-w-3xl mb-16 text-center mx-auto">
-          <h2 className="text-base font-semibold leading-7" style={{ color: '#EEC980' }}>
+          <h2
+            className="text-base font-semibold leading-7"
+            style={{ color: "#EEC980" }}
+          >
             Collection Endro® en Vidéo
           </h2>
           <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
             Plongez dans l'<em className="font-serif italic">Harmonie</em>
           </p>
         </div>
-        
+
         {/* Grille animée */}
-        <motion.div 
+        <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12"
           variants={staggerContainer}
           initial="hidden"
@@ -84,6 +89,8 @@ const VideosPage = () => {
             </motion.div>
           ))}
         </motion.div>
+        <ProductList />
+        <ArtisanCallout />
       </main>
       <Footer />
     </div>

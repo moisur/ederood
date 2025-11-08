@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import EmailPopup from "@/components/EmailPopup";
+import ExitIntentPopup from "@/components/ExitIntentPopup";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +31,11 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         {children}
+        <EmailPopup />
+        <ExitIntentPopup
+          calendlyLink="https://calendly.com/ederod-handpan"
+          phoneNumber="+33123456789"
+        />
       </body>
     </html>
   );
