@@ -2,8 +2,12 @@ import ArtisanCallout from "@/components/ArtisanCallout";
 import Footer from "@/components/Footer";
 import Gallery from "@/components/Gallery";
 import Header from "@/components/Header";
+import HeroIntroduction from "@/components/HeroIntroduction";
 import HighQuality from "@/components/HighQuality";
+import MadeInFrance from "@/components/MadeInFrance";
 import Manufacturing from "@/components/Manufacturing";
+import ManufacturingProcess from "@/components/ManufacturingProcess";
+import MaterialQuality from "@/components/MaterialQuality";
 import MoreInfo from "@/components/MoreInfo";
 import ProductList from "@/components/ProductList";
 
@@ -39,41 +43,26 @@ export default function HomePage() {
           <section id="about" className="py-20 bg-white">
             <div className="container mx-auto px-6 lg:px-8">
               <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
-                Le Handpan Endro®
+                Le Handpan Endro® 5éme génération
               </h2>
               <div className="max-w-4xl mx-auto text-lg text-gray-700 leading-relaxed space-y-6">
                 <p>
-                  The <strong>Endro®</strong> is a steel melodic percussion instrument from the
-                  ‘<strong>handpan</strong>’ family. This family includes instruments derived
-                  from the steelpan or steeldrum category from the Caribbean,
-                  played with sticks, whilst handpans are played with the hands.
+                  Le <strong>Endro®</strong> est un instrument de percussion mélodique en acier, issu de la famille des « <strong>handpans</strong> ». Cette famille regroupe des instruments dérivés du steelpan ou steeldrum des Caraïbes, joués avec des baguettes, tandis que les handpans sont joués avec les mains.
                 </p>
                 <p>
-                  The handpan Endro® is particular in that it brings a very
-                  <em> intuitive</em> and fun approach to playing because of its
-                  <strong>ergonomics</strong> and because it is tuned to a pre-determined mode.
+                  Le handpan Endro® se distingue par son approche de jeu très <em>intuitive</em> et ludique, grâce à son <strong>ergonomie</strong> et à son accordage sur un mode prédéfini.
                 </p>
                 <p>
-                  The instrument is <strong>sensitive</strong> : a slight tapping of the
-                  fingertips is sufficient to achieve <strong>resonance</strong>, producing a
-                  note.
+                  L'instrument est <strong>sensible</strong> : un léger tapotement du bout des doigts suffit à obtenir une <strong>résonance</strong>, produisant une note.
                 </p>
                 <p>
-                  The <strong>timbre</strong> of the Endro® is characterised by a <em>warm, soft
-                  sound</em> combined with a strong, sharp <em>vibrational resonance</em>
-                  which is comparable to the tinkling of a bell or a crystal
-                  glass. Thanks to the intrinsic qualities of the steel table
-                  used, this produces the emission of <strong>rich harmonics</strong>.
+                  Le <strong>timbre</strong> du Endro® se caractérise par un <em>son chaud et doux</em>, combiné à une <em>résonance vibratoire</em> forte et nette, comparable au tintement d'une cloche ou d'un verre en cristal. Grâce aux qualités intrinsèques de la tôle d'acier utilisée, cela produit l'émission d'<strong>harmoniques riches</strong>.
                 </p>
                 <p>
-                  The acoustic qualities and ease of use offer multiple possible
-                  approaches to the instrument. It can be fun and recreational,
-                  purely musical or a support to <em>meditation</em>.
+                  Les qualités acoustiques et la facilité d'utilisation offrent de multiples approches possibles de l'instrument. Il peut être amusant et récréatif, purement musical ou un support à la <em>méditation</em>.
                 </p>
                 <p>
-                  The handpan Endro®, which you place on your lap, <strong>vibrates
-                  between your hands</strong> and acts as a medium delivering expression
-                  in the creation of a <em>sensitive sound</em>.
+                  Le handpan Endro®, que vous placez sur vos genoux, <strong>vibre entre vos mains</strong> et agit comme un médium délivrant l'expression dans la création d'un <em>son sensible</em>.
                 </p>
               </div>
             </div>
@@ -81,9 +70,13 @@ export default function HomePage() {
 
           <ProductList />
           <Manufacturing />
+          <HeroIntroduction />
+          <ManufacturingProcess />
+          <MaterialQuality />
           <ArtisanCallout />
           <HighQuality />
           <Gallery />
+          <MadeInFrance />
           <MoreInfo />
           
         </main>

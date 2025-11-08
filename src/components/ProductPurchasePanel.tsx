@@ -2,8 +2,12 @@
 "use client";
 import { motion } from "framer-motion";
 import { Product } from "@/types";
+import { useCart } from "@/context/CartContext";
+import Reassurance from "./Reassurance";
 
 export const ProductPurchasePanel = ({ product }: { product: Product }) => {
+  const { addToCart } = useCart();
+
   return (
     <div className="bg-gray-50/80 p-8 rounded-2xl border border-gray-200 shadow-sm space-y-6">
       <div>
@@ -39,8 +43,9 @@ export const ProductPurchasePanel = ({ product }: { product: Product }) => {
         ))}
       </div>
       <motion.button
+        onClick={() => addToCart(product)}
         className="w-full text-black font-bold py-4 px-6 rounded-full text-lg shadow-lg"
-        style={{ backgroundColor: "#EEC980" }}
+        style={{ backgroundColor: "#EEC990" }}
         whileHover={{
           scale: 1.05,
           boxShadow: "0px 10px 30px rgba(238, 201, 128, 0.7)",
@@ -49,6 +54,7 @@ export const ProductPurchasePanel = ({ product }: { product: Product }) => {
       >
         Ajouter au panier
       </motion.button>
+      <Reassurance />
     </div>
   );
 };

@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProductList from "@/components/ProductList";
 import ArtisanCallout from "@/components/ArtisanCallout";
+import FeaturedAccessories from "@/components/FeaturedAccessories";
 
 export default function NosCreationsPage() {
   return (
@@ -12,6 +13,7 @@ export default function NosCreationsPage() {
           <ProductList />
         </div>
       </main>
+      <FeaturedAccessories />
       <ArtisanCallout />
       <Footer />
     </div>
