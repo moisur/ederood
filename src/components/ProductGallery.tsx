@@ -17,8 +17,9 @@ export const ProductGallery = ({
   gallery,
   alt,
 }: ProductGalleryProps) => {
-  const [activeImage, setActiveImage] = useState(mainImage);
-  const allImages = [mainImage, ...gallery];
+  const pubImage = Math.random() < 0.5 ? '/images/Ederod Pub 1.png' : '/images/Ederod Pub 2.png';
+  const [activeImage, setActiveImage] = useState(pubImage);
+  const allImages = [pubImage, mainImage, ...gallery];
 
   return (
     // On utilise Flexbox pour la mise en page

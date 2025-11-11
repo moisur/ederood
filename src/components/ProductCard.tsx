@@ -2,7 +2,7 @@
 
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, Easing, Variants } from "framer-motion";
@@ -33,6 +33,17 @@ export const ProductCard = ({ product, index }: ProductCardProps) => {
     },
   };
 
+  const [currentImage, setCurrentImage] = useState(product.imageUrl);
+
+  const handleMouseEnter = () => {
+    const pubImage = index % 2 === 0 ? '/images/Ederod Pub 1.png' : '/images/Ederod Pub 2.png';
+    setCurrentImage(pubImage);
+  };
+
+  const handleMouseLeave = () => {
+    setCurrentImage(product.imageUrl);
+  };
+
   return (
     <motion.div
       variants={cardVariants}
@@ -52,11 +63,13 @@ export const ProductCard = ({ product, index }: ProductCardProps) => {
               </div>
             )}
             <Image
-              src={product.imageUrl}
+              src={currentImage}
               alt={product.name}
               width={400}
               height={400}
               className="w-full h-80 object-cover transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
             />
           </div>
 
