@@ -302,7 +302,7 @@ const CartSidebar = () => {
                   <ChatBubbleLeftRightIcon className="w-4 h-4 mr-2 text-green-600" />
                   Contact direct avec votre fabricant pour toute question.
                 </div>
-                <Link href="/contact">
+                <Link href="/checkout">
                   <motion.button
                     className="w-full text-black font-bold py-4 px-6 rounded-full text-lg shadow-lg"
                     style={{
