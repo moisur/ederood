@@ -67,7 +67,7 @@ export const ProductCard = ({ product, index }: ProductCardProps) => {
               alt={product.name}
               width={400}
               height={400}
-              className="w-full h-80 object-cover transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
+              className="w-full aspect-square object-cover transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             />

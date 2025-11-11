@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image"; // Importation de l'Image de Next.js
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useCart } from "@/context/CartContext";
@@ -36,8 +37,16 @@ const Header = () => {
   return (
     <header className={headerClasses}>
       <div className="container mx-auto px-6 lg:px-8 flex justify-between items-center h-20">
-        <div className="text-2xl font-bold">
-          <Link href="/">Ederod Handpan</Link>
+        <div className="flex items-center"> {/* Utilisation de flex pour aligner l'image */}
+          <Link href="/">
+            <Image
+              src="/logo.png"
+              alt="Ederod Handpan Logo"
+              width={120} // Ajustez la largeur selon vos besoins
+              height={40} // Ajustez la hauteur selon vos besoins
+              className="h-auto" // Pour maintenir le ratio d'aspect
+            />
+          </Link>
         </div>
 
         <nav className="hidden md:flex items-center space-x-2">
