@@ -17,9 +17,8 @@ export const ProductGallery = ({
   gallery,
   alt,
 }: ProductGalleryProps) => {
-  const pubImage = Math.random() < 0.5 ? '/images/Ederod Pub 1.png' : '/images/Ederod Pub 2.png';
-  const [activeImage, setActiveImage] = useState(pubImage);
-  const allImages = [pubImage, mainImage, ...gallery];
+  const [activeImage, setActiveImage] = useState(mainImage);
+  const allImages = [...new Set([mainImage, ...gallery])];
 
   return (
     // On utilise Flexbox pour la mise en page
@@ -28,7 +27,7 @@ export const ProductGallery = ({
       <div className="flex md:flex-col gap-4">
         {allImages.slice(0, 4).map((img, idx) => (
           <div
-            key={idx}
+            key={img}
             className={`cursor-pointer w-1/4 md:w-24 flex-shrink-0 aspect-1 rounded-lg overflow-hidden ring-2 ring-transparent transition-all duration-200 ${
               activeImage === img ? "ring-[#EEC980]" : "hover:ring-[#EEC980]/50"
             }`}
